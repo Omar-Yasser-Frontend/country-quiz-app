@@ -4,7 +4,7 @@ import Finish from "./Finish";
 import styles from "./Main.module.css";
 
 function Main({ children }: { children: React.ReactNode }) {
-  const { isLoading, questions, currQuestion, finish, error } = useQuestions();
+  const { isLoading, questions, currQuestion, finish, error }: any = useQuestions();
 
   if (isLoading || !questions) return <p>LOADING DATA...</p>;
 

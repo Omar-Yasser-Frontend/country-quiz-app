@@ -3,9 +3,14 @@ import { useQuestions } from "../context/QuestionsContext";
 import { useQuizData } from "../context/QuizDataContext";
 
 function Option({ country, index }) {
-  const { questions, setFinish } = useQuestions();
-  const { currQuestion, setCurrAnswer, currAnswer, setCurrQuestion, plusOne } =
-    useQuizData();
+  const { questions, setFinish }: any = useQuestions();
+  const {
+    currQuestion,
+    setCurrAnswer,
+    currAnswer,
+    setCurrQuestion,
+    plusOne,
+  }: any = useQuizData();
 
   return (
     <button

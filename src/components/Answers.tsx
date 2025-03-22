@@ -4,8 +4,8 @@ import styles from "./Aswers.module.css";
 import Option from "./Option";
 
 function Answers() {
-  const { questions } = useQuestions();
-  const { currQuestion } = useQuizData();
+  const { questions }: any = useQuestions();
+  const { currQuestion }: any = useQuizData();
 
   return (
     <div className={`${styles.answer}`}>

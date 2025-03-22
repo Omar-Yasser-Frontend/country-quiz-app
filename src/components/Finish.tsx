@@ -4,8 +4,8 @@ import { useQuestions } from "../context/QuestionsContext";
 import { formatQuestions } from "../utils/helper";
 
 function Finish() {
-  const { points, resetQuiz } = useQuizData();
-  const { resetQuestions } = useQuestions();
+  const { points, resetQuiz }: any = useQuizData();
+  const { resetQuestions }: any = useQuestions();
   return (
     <div className={styles.finish}>
       <div>

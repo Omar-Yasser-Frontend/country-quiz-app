@@ -2,7 +2,7 @@ import { useQuizData } from "../context/QuizDataContext";
 import styles from "./Header.module.css";
 
 function Header() {
-  const { points } = useQuizData();
+  const { points }: any = useQuizData();
   return (
     <header className={`${styles.header}`}>
       <h1>Country Quiz</h1>
