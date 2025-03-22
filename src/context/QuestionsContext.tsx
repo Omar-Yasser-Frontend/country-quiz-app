@@ -8,7 +8,7 @@ function QuestionsProvider({ children }: { children: React.ReactNode }) {
   const [countries, setCountries] = useState({});
   const [finish, setFinish] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
-  const [questions, setQuestions] = useState(null);
+  const [questions, setQuestions] = useState<object | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   // dumb, i forgot that this is not stable i were have to use useRef or state but state is the right one
