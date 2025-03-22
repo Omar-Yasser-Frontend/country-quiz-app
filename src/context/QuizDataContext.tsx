@@ -1,7 +1,7 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import Question from "../components/Question";
 
-const QuizDataContext = createContext();
+const QuizDataContext = createContext({});
 
 function QuizDataProvider({ children }: { children: React.ReactNode }) {
   const [points, setPoints] = useState<number>(0);

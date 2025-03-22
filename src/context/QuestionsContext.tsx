@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { formatQuestions } from "../utils/helper";
 import Question from "../components/Question";
 
-const QuestionContext = createContext();
+const QuestionContext = createContext({});
 
 function QuestionsProvider({ children }: { children: React.ReactNode }) {
   const [countries, setCountries] = useState<any>(null);
