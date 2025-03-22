@@ -2,7 +2,7 @@ import styles from "./Option.module.css";
 import { useQuestions } from "../context/QuestionsContext";
 import { useQuizData } from "../context/QuizDataContext";
 
-function Option({ country, index }) {
+function Option({ country, index }: { country: any; index: number }) {
   const { questions, setFinish }: any = useQuestions();
   const {
     currQuestion,

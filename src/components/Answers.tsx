@@ -9,7 +9,7 @@ function Answers() {
 
   return (
     <div className={`${styles.answer}`}>
-      {questions[currQuestion - 1].countries.map((country, i: number) => (
+      {questions[currQuestion - 1].countries.map((country: any, i: number) => (
         <Option country={country} index={i} key={i} />
       ))}
     </div>

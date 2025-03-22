@@ -1,7 +1,6 @@
 import styles from "./Finish.module.css";
 import { useQuizData } from "../context/QuizDataContext";
 import { useQuestions } from "../context/QuestionsContext";
-import { formatQuestions } from "../utils/helper";
 
 function Finish() {
   const { points, resetQuiz }: any = useQuizData();

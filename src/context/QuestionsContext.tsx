@@ -31,7 +31,7 @@ function QuestionsProvider({ children }: { children: React.ReactNode }) {
         const questions: any = formatQuestions(data);
         setQuestions(questions);
       } catch (e) {
-        console.error(e.message);
+        console.error(e);
         setError(true);
       } finally {
         setIsLoading(false);
