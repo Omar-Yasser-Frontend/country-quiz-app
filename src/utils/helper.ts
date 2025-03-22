@@ -1,7 +1,7 @@
 const questionWheel = ["flag", "capital", "population", "region", "cioc"];
 
-export function formatQuestions(data: any) {
-  data = data.filter((country) => country.cioc !== "ISR");
+export function formatQuestions(data: Array<object>) {
+  data = data.filter((country: any) => country.cioc !== "ISR");
 
   const questions: Array<object> = [];
   for (let i = 0; i < 10; i++) {

@@ -5,7 +5,7 @@ import Question from "../components/Question";
 const QuestionContext = createContext();
 
 function QuestionsProvider({ children }: { children: React.ReactNode }) {
-  const [countries, setCountries] = useState({});
+  const [countries, setCountries] = useState<Array<unknown> | null>(null);
   const [finish, setFinish] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
   const [questions, setQuestions] = useState<object | null>(null);
