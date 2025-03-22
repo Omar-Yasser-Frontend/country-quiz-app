@@ -1,0 +1,43 @@
+.finish {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finish img {
+  max-width: 100%;
+}
+
+.finish > div {
+  background-color: var(--bg-purple);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.finish > div p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.finish > div p:last-of-type {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.finish > div button {
+  width: 75%;
+  padding: 20px;
+  border-radius: 6px;
+  background-image: var(--linear-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}

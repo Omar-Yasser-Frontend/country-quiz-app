@@ -1,0 +1,21 @@
+.button {
+  padding: 25px 15px;
+  background-color: var(--item-purple);
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.button.active {
+  background-image: var(--linear-color);
+}

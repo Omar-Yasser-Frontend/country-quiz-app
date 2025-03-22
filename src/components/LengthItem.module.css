@@ -1,0 +1,17 @@
+.item {
+  text-align: center;
+  background-color: var(--item-purple);
+  width: 52px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .item {
+    width: 40px;
+  }
+}
